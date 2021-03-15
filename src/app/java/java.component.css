@@ -1,0 +1,14 @@
+.container{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+table{
+    border-collapse: collapse;
+    table-layout:fixed;
+    }
+table td{
+   table-layout: initial;
+    word-wrap:initial;
+   
+}

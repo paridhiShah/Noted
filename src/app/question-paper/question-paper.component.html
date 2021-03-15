@@ -1,0 +1,47 @@
+<div class="container">
+    <form  class="was-validated" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="validationTextarea"><h5>Programme</h5></label>
+          <div class="form-group">
+            <select class="custom-select" formControlName="programme" required>
+              <option value="">Open this select menu</option>
+              <option value="1">Undergraduate</option>
+              <option value="2">Postgraduate</option>
+            </select>
+             </div>
+             </div>
+
+             <div class="mb-3">
+                <label for="validationTextarea"><h5>Course</h5></label>
+                <div class="form-group">
+                  <select class="custom-select" formControlName="course" required>
+                    <option value="">Open this select menu</option>
+                    <option value="1">BSc Computer Science</option>
+                    <option value="2">BCA</option>
+                    <option value="3">MSc Computer Science</option>
+                    <option value="4">MCA</option>
+                    <option value="5">MSc Data Science</option>
+                  </select>
+                   </div>
+                   </div>
+
+                   <div class="mb-3">
+                    <label for="validationTextarea"><h5>Semester</h5></label>
+                    <div class="form-group">
+                      <select class="custom-select" formControlName="semester" required>
+                        <option value="">Open this select menu</option>
+                        <option value="1">I</option>
+                        <option value="2">II</option>
+                        <option value="3">III</option>
+                        <option value="4">IV</option>
+                        <option value="5">V</option>
+                        <option value="6">VI</option>
+                      </select>
+                       </div>
+                   </div>
+                   <hr>
+                   <br>
+                   <button type="submit" [disabled]="!quespaper.valid" class="btn btn-outline-success btn-lg btn-block">Search</button>
+      
+      </form>
+</div>
